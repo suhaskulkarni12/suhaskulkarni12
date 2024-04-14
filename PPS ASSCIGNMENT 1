@@ -1,0 +1,122 @@
+1.	Write a program to enter two numbers and perform all arithmetic operations.
+Ans:
+num1=float(input("Enter first number: "))
+num2=float(input("Enter second number: "))
+
+print(f"Addition of the numbers is: {num1+num2}")
+print(f"Subtraction of the numbers is: {num1-num2} and {num2-num1}")
+print(f"Multiplication of the numbers is: {num1*num2}")
+print(f"Division of the number is: {num1/num2} and {num2/num1}")
+print(f"Modulus of the number is: {num1%num2} and {num2%num1}")
+print(f"Floor modulus is: {num1//num2} and {num2//num1}")
+print(f"Exponent is: {num1**num2} and {num2**num1}")
+
+2.	Write a program to find area of a triangle using Heron’s Formula.
+Ans:
+sides_triangle=list(map(int , input("Enter three sides os triangle: ").split()))
+
+sum=0
+for sides in sides_triangle:
+    sum+=sides
+s=sum/2
+    
+area=(s*(s-sides_triangle[0])*(s-sides_triangle[1])*(s-sides_triangle[2]))**(1/2)
+print(f"Area of the triangle is {area}")
+3.	Write a program to enter two numbers and perform all relational operations.
+Ans:
+
+num1=float(input("Enter the 1st number:"))
+num2=float(input("Enter the 2nd number:"))
+
+if num1>num2 :
+    print(f"{num1} is greater")
+elif num2>num1 :
+    print(f"{num2} is greater")
+elif num1==num2 :
+    print(f"Both the numbers are equal.")
+
+
+4.	Write a python program to perform for different unit conversion (Fahrenheit to Celsius).
+Ans:
+
+temp_in_celcius=float(input("Enter the temperature in celsius:"))
+farhenite_temp=(9/5*temp_in_celcius)+32
+print(f"The temperature in Fahrenheit is {farhenite_temp}")
+
+5.	Take a real value `x' from the user and find the value of tan (x), log (x), square root of x.
+Ans:
+
+x=float(input("Enter any real number: "))
+
+sqrt_x=x**(1/2)
+
+print(f"Squareroot of number is {sqrt_x}")
+
+
+
+
+
+
+
+
+
+
+6.	Write a program to calculate area and circumference of circle using variables and constant.
+Ans:
+
+radius=float(input("Enter the radius of the circle: "))
+area=3.14*(radius**2)
+Circumference=2*3.14*radius
+print(f"The area of circle with radius {radius} is {area} and circumference is {Circumference}")
+
+
+7.	Write a program to add and subtract two complex numbers.
+Ans:
+
+real_c1=float(input("Enter the real part of the first complex number:"))
+img_c1=float(input("Enter the imaginary part of the first complex number:"))
+real_c2=float(input("Enter the real part of the second complex number:"))
+img_c2=float(input("Enter the imaginary part of the second complex number:"))
+
+c1=complex(real_c1,img_c1)
+c2=complex(real_c2,img_c2)
+
+subtraction = c1-c2
+print("The result of subtraction is:",subtraction)
+
+
+8.	Write a program to enter two numbers and perform all logical operations.
+Ans:
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+print("NOT operation:", not num1)
+print("NOT operation:", not num2)
+print("AND operation:", num1 and num2)
+print("OR operation:", num1 or num2)
+print("XOR operation:", num1 ^ num2)
+print("NAND operation:",not(num1 and num2))
+print("NOR operation:", not(num1 or num2))
+
+9.	Write a program to enter two numbers and perform all bitwise operations.
+Ans:
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+print("Bitwise AND:", num1 & num2)
+print("Bitwise OR:", num1 | num2)
+print("Bitwise XOR:", num1 ^ num2)
+print("Bitwise NOT:", ~num1)
+
+10)	 Write a program to swap the values of two numbers.
+
+Ans:
+num1=float(input("Enter the 1st number: "))
+num2=float(input("Enter the 2nd number: "))
+
+temp=num1
+num1=num2
+num2=temp
+print(f"After swapping \n 1st number: {num1} \n 2nd number: {num2}")
